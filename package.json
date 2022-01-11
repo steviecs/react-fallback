@@ -1,5 +1,5 @@
 {
-  "name": "react-typescript",
+  "name": "react-fallback",
   "version": "1.0.0",
   "author": "steviecs",
   "description": "A POC component library for rendering adaptive loading states that adjust to the shape of your components while data is being fetched",
