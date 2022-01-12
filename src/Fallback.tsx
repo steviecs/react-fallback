@@ -2,7 +2,7 @@ import { useFallback } from "./useFallback";
 
 interface Props {
   isLoading: boolean;
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 export const Fallback = (props: Props) => {

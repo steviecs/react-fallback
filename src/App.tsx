@@ -1,20 +1,30 @@
 import "./styles.css";
-import { ComplexCard } from "./ComplexCard";
-import { useState, useEffect } from "react";
 import { Fallback } from "./Fallback";
+import { useState, useEffect } from "react";
+import { ComplexCard } from "./examples/ComplexCard";
+import { ComplexList } from "./examples/ComplexList";
+import { initialState } from "./examples/state";
 
 export default function App() {
-  const [isLoading, setisLoading] = useState(true);
+  const [data, setData] = useState(initialState);
 
   useEffect(() => {
     setTimeout(() => {
-      setisLoading(false);
+      setData({ ...data, isLoading: false });
     }, 3000);
-  }, [isLoading]);
+  }, [data]);
 
   return (
-    <Fallback isLoading={isLoading}>
-      <ComplexCard isLoading={isLoading} />
-    </Fallback>
+    <>
+      <h3 style={{ display: "flex", justifyContent: "center" }}>
+        Two complex components pulled straight from MUI examples
+      </h3>
+      <Fallback isLoading={data.isLoading}>
+        <div style={{ display: "flex", justifyContent: "center", gap: 20 }}>
+          <ComplexCard data={data.card} />
+          <ComplexList data={data.listItem} />
+        </div>
+      </Fallback>
+    </>
   );
 }
