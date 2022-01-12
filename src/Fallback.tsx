@@ -3,7 +3,7 @@ import { useFallback } from "./useFallback";
 interface FallbackProps {
   isLoading: boolean;
   children: JSX.Element | JSX.Element[];
-  fallbackOnStaticContent: boolean;
+  fallbackOnStaticContent?: boolean;
 }
 
 export const Fallback = (props: FallbackProps) => {

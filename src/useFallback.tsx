@@ -19,7 +19,7 @@ const assignFallbackAttributes = (el: Element) => {
 
 interface UseFallbackProps {
   isLoading: boolean;
-  fallbackOnStaticContent: boolean;
+  fallbackOnStaticContent?: boolean;
 }
 
 export const useFallback = (props: UseFallbackProps) => {
