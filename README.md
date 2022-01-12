@@ -39,6 +39,34 @@ dunks on
   );
 ```
 
+## Props Reference
+
+### `Fallback` only
+
+<table>
+    <thead>
+        <tr>
+            <th>Prop</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>isLoading: boolean</code></td>
+            <td>A flag to determine if component-dependent data is being fetched</td>
+            <td><code>false</code></td>
+        </tr>
+        <tr>
+            <td><code>fallbackOnStaticContent?: boolean</code></td>
+            <td>
+                A flag to determine if static content should be skeleton-ized
+            </td>
+            <td><code>false</code></td>
+        </tr>
+    </tbody>
+</table>
+
 ## Implementation
 
 At this time, `react-fallback` works by:
