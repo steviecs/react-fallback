@@ -20,7 +20,7 @@ interface Props {
 
 export const ComplexCard: React.FC<Props> = ({ data }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: 345 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

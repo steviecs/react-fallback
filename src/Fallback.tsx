@@ -1,11 +1,13 @@
 import { useFallback } from "./useFallback";
 
-interface Props {
+interface FallbackProps {
   isLoading: boolean;
   children: JSX.Element | JSX.Element[];
+  fallbackOnStaticContent: boolean;
 }
 
-export const Fallback = (props: Props) => {
-  const { withFallback } = useFallback(props.isLoading);
-  return withFallback(<div>{props.children}</div>);
+export const Fallback = (props: FallbackProps) => {
+  const { isLoading, children, fallbackOnStaticContent } = props;
+  const { withFallback } = useFallback({ isLoading, fallbackOnStaticContent });
+  return withFallback(<div>{children}</div>);
 };

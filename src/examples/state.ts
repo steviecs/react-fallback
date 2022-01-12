@@ -21,6 +21,39 @@ export type ListItemState = {
 export const initialState = {
   isLoading: true,
   card: {
+    cardAvatar: "",
+    cardHeader: "",
+    cardDate: "",
+    cardBody: "",
+    cardImage: ""
+  },
+  listItem: [
+    {
+      itemTitle: "",
+      itemSender: "",
+      itemBody: ""
+    },
+    {
+      itemTitle: "",
+      itemSender: "",
+      itemBody: ""
+    },
+    {
+      itemTitle: "",
+      itemSender: "",
+      itemBody: ""
+    },
+    {
+      itemTitle: "",
+      itemSender: "",
+      itemBody: ""
+    }
+  ]
+};
+
+export const loadedData = {
+  isLoading: false,
+  card: {
     cardAvatar: "R",
     cardHeader: "Lorem ipsum dolor sit amet",
     cardDate: "September 14, 2016",

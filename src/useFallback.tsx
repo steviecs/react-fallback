@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 const tags = ["P", "H1", "H2", "H3", "H4", "H5", "H6", "SPAN", "IMG"];
 
-const getAttributes = (el: Element) => {
+const assignFallbackAttributes = (el: Element) => {
   el.textContent = el.textContent || "_";
   const css = window.getComputedStyle(el);
   let styles = "";
@@ -17,7 +17,13 @@ const getAttributes = (el: Element) => {
   return styles;
 };
 
-export const useFallback = (isLoading: boolean) => {
+interface UseFallbackProps {
+  isLoading: boolean;
+  fallbackOnStaticContent: boolean;
+}
+
+export const useFallback = (props: UseFallbackProps) => {
+  const { isLoading, fallbackOnStaticContent } = props;
   const ref = useRef<HTMLDivElement>();
 
   const withFallback = (tree: JSX.Element) => {
@@ -33,9 +39,15 @@ export const useFallback = (isLoading: boolean) => {
             ref.current?.querySelectorAll("*").forEach((el) => {
               if (tags.includes(el.tagName) || el.firstChild?.nodeValue) {
                 const skeleton = document.createElement("div");
-                const styles = getAttributes(el);
-                skeleton.style.cssText = styles;
-                el.replaceWith(skeleton);
+                if (fallbackOnStaticContent) {
+                  const styles = assignFallbackAttributes(el);
+                  skeleton.style.cssText = styles;
+                  el.replaceWith(skeleton);
+                } else if (!el.textContent) {
+                  const styles = assignFallbackAttributes(el);
+                  skeleton.style.cssText = styles;
+                  el.replaceWith(skeleton);
+                }
               }
             });
           }}

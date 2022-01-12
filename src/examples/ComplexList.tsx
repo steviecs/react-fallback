@@ -15,7 +15,10 @@ interface Props {
 
 export const ComplexList: React.FC<Props> = ({ data }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: 345 }}>
+      <Typography sx={{ display: "flex", justifyContent: "center" }}>
+        I'm static, don't skeleton-ize me
+      </Typography>
       <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
         {data.map((d) => (
           <>
