@@ -1,6 +1,6 @@
 # react-fallback
 
-A POC component library for rendering adaptive skeletons that adjust to the shape of your UI's layout while data is being fetched.
+A POC React component library for rendering skeleton states that automatically adapt to the shape of your UI layout while data is being fetched.
 
 Try it live in a sandbox by reloading the in-window browser: https://codesandbox.io/s/github/steviecs/react-fallback
 
