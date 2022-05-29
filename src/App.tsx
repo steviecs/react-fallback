@@ -1,5 +1,5 @@
 import "./styles.css";
-import { Fallback } from "./Fallback";
+import Fallback from "./components/Fallback";
 import { useState, useEffect } from "react";
 import { ComplexCard } from "./examples/ComplexCard";
 import { ComplexList } from "./examples/ComplexList";

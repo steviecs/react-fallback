@@ -22,8 +22,8 @@ export const ComplexList = ({ data }: Props) => {
         I'm static, don't skeleton-ize me
       </Typography>
       <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
-        {data.map((d) => (
-          <>
+        {data.map((d, i) => (
+          <div key={i}>
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
                 <Avatar />
@@ -46,7 +46,7 @@ export const ComplexList = ({ data }: Props) => {
               />
             </ListItem>
             <Divider variant="inset" component="li" />
-          </>
+          </div>
         ))}
       </List>
     </Card>

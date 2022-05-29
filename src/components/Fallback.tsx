@@ -1,4 +1,4 @@
-import { useFallback } from "./useFallback";
+import useFallback from "../useFallback";
 
 interface FallbackProps {
   isLoading: boolean;
@@ -6,11 +6,11 @@ interface FallbackProps {
   fallbackOnStaticContent?: boolean;
 }
 
-export const Fallback = ({
+export default function Fallback({
   isLoading,
   children,
   fallbackOnStaticContent
-}: FallbackProps) => {
+}: FallbackProps) {
   const { withFallback } = useFallback({ isLoading, fallbackOnStaticContent });
   return withFallback(<div>{children}</div>);
-};
+}

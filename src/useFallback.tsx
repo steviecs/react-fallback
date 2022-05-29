@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 const tags = ["P", "H1", "H2", "H3", "H4", "H5", "H6", "SPAN", "IMG"];
 
-const assignFallbackAttributes = (el: Element) => {
+function assignFallbackAttributes(el: Element) {
   let styles = "";
   el.textContent = el.textContent || "_";
   const css = window.getComputedStyle(el);
@@ -14,17 +14,17 @@ const assignFallbackAttributes = (el: Element) => {
   }
 
   return styles;
-};
+}
 
 interface UseFallbackProps {
   isLoading: boolean;
   fallbackOnStaticContent?: boolean;
 }
 
-export const useFallback = ({
+export default function useFallback({
   isLoading,
   fallbackOnStaticContent
-}: UseFallbackProps) => {
+}: UseFallbackProps) {
   const ref = useRef<HTMLDivElement>();
 
   const withFallback = (tree: JSX.Element) => {
@@ -55,4 +55,4 @@ export const useFallback = ({
   };
 
   return { withFallback };
-};
+}

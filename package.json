@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "author": "steviecs",
   "description": "A POC component library for rendering adaptive skeletons that adjust to the shape of your UI's layout while data is being fetched",
-  "keywords": ["typescript", "react", "starter"],
+  "keywords": [
+    "typescript",
+    "react",
+    "starter"
+  ],
   "main": "src/index.tsx",
   "dependencies": {
     "@emotion/react": "11.7.1",
@@ -13,6 +17,7 @@
     "@material-ui/styles": "4.11.4",
     "@mui/icons-material": "5.2.5",
     "@mui/material": "5.2.8",
+    "@testing-library/react": "13.3.0",
     "mui": "0.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -29,5 +34,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
