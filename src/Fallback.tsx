@@ -6,8 +6,11 @@ interface FallbackProps {
   fallbackOnStaticContent?: boolean;
 }
 
-export const Fallback = (props: FallbackProps) => {
-  const { isLoading, children, fallbackOnStaticContent } = props;
+export const Fallback = ({
+  isLoading,
+  children,
+  fallbackOnStaticContent
+}: FallbackProps) => {
   const { withFallback } = useFallback({ isLoading, fallbackOnStaticContent });
   return withFallback(<div>{children}</div>);
 };

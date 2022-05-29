@@ -18,7 +18,7 @@ interface Props {
   data: CardState;
 }
 
-export const ComplexCard: React.FC<Props> = ({ data }) => {
+export const ComplexCard = ({ data }: Props) => {
   return (
     <Card sx={{ width: 345 }}>
       <CardHeader

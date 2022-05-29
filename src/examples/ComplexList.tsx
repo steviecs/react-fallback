@@ -1,19 +1,21 @@
 import * as React from "react";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import Divider from "@mui/material/Divider";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
-import Typography from "@mui/material/Typography";
 import { ListItemState } from "./state";
-import { Card } from "@mui/material";
+import {
+  List,
+  ListItem,
+  Divider,
+  ListItemText,
+  ListItemAvatar,
+  Avatar,
+  Typography,
+  Card
+} from "@mui/material";
 
 interface Props {
   data: ListItemState[];
 }
 
-export const ComplexList: React.FC<Props> = ({ data }) => {
+export const ComplexList = ({ data }: Props) => {
   return (
     <Card sx={{ width: 345 }}>
       <Typography sx={{ display: "flex", justifyContent: "center" }}>

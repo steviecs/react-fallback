@@ -51,7 +51,7 @@ export const initialState = {
   ]
 };
 
-export const loadedData = {
+export const mockData = {
   isLoading: false,
   card: {
     cardAvatar: "R",

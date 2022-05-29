@@ -1,12 +1,13 @@
 # react-fallback
 
-A POC component library for rendering adaptive loading states that adjust to the shape of your UI while data is being fetched
+A POC component library for rendering adaptive skeletons that adjust to the shape of your UI's layout while data is being fetched.
 
 Try it live in a sandbox by reloading the in-window browser: https://codesandbox.io/s/github/steviecs/react-fallback
 
 ## Motivation
 
 Because
+
 ```
 return (
   <Fallback isLoading={data}>
@@ -18,7 +19,9 @@ return (
   </Fallback>
 );
 ```
+
 dunks on
+
 ```
   return (
     <>
@@ -70,6 +73,7 @@ dunks on
 ## Implementation
 
 At this time, `react-fallback` works by:
+
 - Consuming your JSX as a children inside of a `<Fallback/>` wrapper
 - Cloning the component tree
 - Iterating through child elements

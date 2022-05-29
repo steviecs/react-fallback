@@ -2,7 +2,7 @@
   "name": "react-fallback",
   "version": "1.0.0",
   "author": "steviecs",
-  "description": "A POC component library for rendering adaptive loading states that adjust to the shape of your components while data is being fetched",
+  "description": "A POC component library for rendering adaptive skeletons that adjust to the shape of your UI's layout while data is being fetched",
   "keywords": ["typescript", "react", "starter"],
   "main": "src/index.tsx",
   "dependencies": {

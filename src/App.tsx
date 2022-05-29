@@ -3,14 +3,14 @@ import { Fallback } from "./Fallback";
 import { useState, useEffect } from "react";
 import { ComplexCard } from "./examples/ComplexCard";
 import { ComplexList } from "./examples/ComplexList";
-import { initialState, loadedData } from "./examples/state";
+import { initialState, mockData } from "./examples/state";
 
 export default function App() {
   const [data, setData] = useState(initialState);
 
   useEffect(() => {
     setTimeout(() => {
-      setData(loadedData);
+      setData(mockData);
     }, 3000);
   }, [data]);
 
