@@ -1,4 +1,7 @@
-# react-fallback
+<div align="center">
+  <img src="https://i.imgur.com/3xjKPvz.png" alt="Logo" width="160" height="160" />
+  <h1 align="center">react-fallback</h1>
+</div>
 
 A POC React component library for rendering skeleton states that automatically adapt to the shape of your UI layout while data is being fetched.
 
