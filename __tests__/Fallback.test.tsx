@@ -1,4 +1,4 @@
-import Fallback from "../components/Fallback";
+import Fallback from "../src";
 import { render, screen } from "@testing-library/react";
 
 it("does not render a skeleton if data has been fetched", () => {
@@ -12,7 +12,7 @@ it("does not render a skeleton if data has been fetched", () => {
 });
 
 it.each(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'img'])
-  ("renders a skeleton if data has not yet been fetched", (t) => {
+  ("renders a skeleton if data has not yet been fetched for a %s element", (t) => {
   render(
     <Fallback isLoading fallbackOnStaticContent>
       <p>Lorem ipsum</p>
