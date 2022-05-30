@@ -1,6 +1,6 @@
 import "./styles.css";
 import Fallback from "./components/Fallback";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ComplexCard } from "./examples/ComplexCard";
 import { ComplexList } from "./examples/ComplexList";
 import { initialState, mockData } from "./examples/state";
@@ -15,7 +15,7 @@ export default function App() {
   }, [data]);
 
   return (
-    <>
+    <div>
       <h3 style={{ display: "flex", justifyContent: "center" }}>
         Two complex components pulled straight from MUI examples
       </h3>
@@ -25,6 +25,6 @@ export default function App() {
           <ComplexList data={data.listItem} />
         </div>
       </Fallback>
-    </>
+    </div>
   );
 }

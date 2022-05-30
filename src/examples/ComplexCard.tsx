@@ -1,3 +1,5 @@
+
+import React from "react";
 import {
   Avatar,
   Card,
@@ -8,11 +10,11 @@ import {
   IconButton,
   Typography
 } from "@mui/material";
+import { CardState } from "./state";
+import { red } from "@mui/material/colors";
+import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
-import { red } from "@mui/material/colors";
-import { CardState } from "./state";
 
 interface Props {
   data: CardState;

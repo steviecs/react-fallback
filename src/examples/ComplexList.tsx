@@ -1,5 +1,4 @@
 import * as React from "react";
-import { ListItemState } from "./state";
 import {
   List,
   ListItem,
@@ -10,6 +9,7 @@ import {
   Typography,
   Card
 } from "@mui/material";
+import { ListItemState } from "./state";
 
 interface Props {
   data: ListItemState[];
