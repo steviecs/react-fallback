@@ -1,1 +1,6 @@
 node_modules
+public
+build
+.vscode
+.codesandbox
+package-lock.json

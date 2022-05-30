@@ -1,4 +1,3 @@
-import React from "react";
 import Fallback from "../components/Fallback";
 import { render, screen } from "@testing-library/react";
 

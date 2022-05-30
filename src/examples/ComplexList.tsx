@@ -1,4 +1,3 @@
-import * as React from "react";
 import {
   List,
   ListItem,
@@ -31,7 +30,7 @@ export const ComplexList = ({ data }: Props) => {
               <ListItemText
                 primary={d.itemTitle}
                 secondary={
-                  <React.Fragment>
+                  <>
                     <Typography
                       sx={{ display: "inline" }}
                       component="span"
@@ -41,7 +40,7 @@ export const ComplexList = ({ data }: Props) => {
                       {d.itemSender}
                     </Typography>
                     {d.itemBody}
-                  </React.Fragment>
+                  </>
                 }
               />
             </ListItem>

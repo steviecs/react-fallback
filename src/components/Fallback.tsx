@@ -1,4 +1,3 @@
-import React from "react";
 import useFallback from "../useFallback";
 
 interface FallbackProps {

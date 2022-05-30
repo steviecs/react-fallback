@@ -1,6 +1,6 @@
 import "./styles.css";
 import Fallback from "./components/Fallback";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ComplexCard } from "./examples/ComplexCard";
 import { ComplexList } from "./examples/ComplexList";
 import { initialState, mockData } from "./examples/state";
