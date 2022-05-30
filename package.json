@@ -6,7 +6,10 @@
   "keywords": [
     "typescript",
     "react",
-    "starter"
+    "skeleton",
+    "loading state",
+    "suspense",
+    "fallback"
   ],
   "main": "src/index.tsx",
   "dependencies": {
