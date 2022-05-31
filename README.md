@@ -11,7 +11,12 @@
 
 A POC React component library for rendering skeleton states that automatically adapt to the shape of your UI layout while data is being fetched.
 
-Try it live in a sandbox by reloading the in-window browser: https://codesandbox.io/s/react-fallback-demo-b36dft?file=/src/App.tsx
+
+## Demo
+
+Try it live by reloading the sandbox browser: https://codesandbox.io/s/react-fallback-demo-b36dft?file=/src/App.tsx
+
+![Example](https://cdn.loom.com/sessions/thumbnails/77d6e8d9aa024064a026d405e773225b-1654016529399.gif)
 
 ## Installation
 
@@ -19,7 +24,7 @@ Try it live in a sandbox by reloading the in-window browser: https://codesandbox
 $ npm i @steviecs/react-fallback
 ```
 
-## Motivation & usage
+## Motivation
 
 Because
 
