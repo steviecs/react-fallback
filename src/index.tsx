@@ -7,8 +7,8 @@ interface FallbackProps {
 }
 
 /**
- * A higher-order component that wraps your JSX to rendering adaptive
- * skeletons that adjust to the shape of layout while data is being fetched
+ * A component that wraps your JSX to render adaptive skeletons
+ * that adjust to the shape of layout while data is being fetched
  * @param isLoading a boolean flag representing if data has been fetched yet
  * @param children child nodes of the Fallback wrapper
  * @param fallbackOnStaticContent a flag that determines if you want to
