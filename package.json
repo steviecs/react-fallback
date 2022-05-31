@@ -1,6 +1,6 @@
 {
   "name": "@steviecs/react-fallback",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "steviecs",
   "description": "A POC component library for rendering adaptive skeletons that adjust to the shape of your UI's layout while data is being fetched",
   "keywords": [
@@ -42,5 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "files": ["dist", "src"]
+  "files": [
+    "dist"
+  ]
 }
