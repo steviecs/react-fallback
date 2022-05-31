@@ -3,6 +3,12 @@
   <h1 align="center">react-fallback</h1>
 </div>
 
+[![Node.js CI](https://github.com/steviecs/react-fallback/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/steviecs/react-fallback/actions/workflows/node.js.yml)
+[![Npm package version](https://badgen.net/npm/v/@steviecs/react-fallback)](https://npmjs.com/package/@steviecs/react-fallback)
+[![Npm package monthly downloads](https://badgen.net/npm/dm/@steviecs/react-fallback)](https://npmjs.com/package/@steviecs/react-fallback)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/steviecs/react-fallback/graphs/commit-activity)
+[![GitHub license](https://img.shields.io/github/license/steviecs/react-fallback.svg)](https://github.com/steviecs/react-fallback/blob/main/LICENSE)
+
 A POC React component library for rendering skeleton states that automatically adapt to the shape of your UI layout while data is being fetched.
 
 Try it live in a sandbox by reloading the in-window browser: https://codesandbox.io/s/react-fallback-demo-b36dft?file=/src/App.tsx
