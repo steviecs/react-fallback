@@ -7,7 +7,13 @@ A POC React component library for rendering skeleton states that automatically a
 
 Try it live in a sandbox by reloading the in-window browser: https://codesandbox.io/s/react-fallback-demo-b36dft?file=/src/App.tsx
 
-## Motivation
+## Installation
+
+```
+$ npm i @steviecs/react-fallback
+```
+
+## Motivation & usage
 
 Because
 
