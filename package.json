@@ -1,8 +1,8 @@
 {
   "name": "@steviecs/react-fallback",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "steviecs",
-  "description": "A POC component library for rendering adaptive skeletons that adjust to the shape of your UI's layout while data is being fetched",
+  "description": "A POC React component library for rendering adaptive skeleton states that adjust to the shape of your UI layout while data fetches",
   "keywords": [
     "typescript",
     "react",
@@ -13,6 +13,7 @@
   ],
   "license": "MIT",
   "main": "dist/index.js",
+  "module": "esm/index.js",
   "peerDependencies": {
     "react": "^17.0.2"
   },
@@ -27,7 +28,7 @@
     "typescript": "^4.7.2"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf ./dist && rm -rf ./esm && tsc --module commonjs --outDir dist & tsc --module esnext --outDir esm",
     "test": "jest"
   },
   "browserslist": {

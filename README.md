@@ -9,8 +9,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/steviecs/react-fallback/graphs/commit-activity)
 [![GitHub license](https://img.shields.io/github/license/steviecs/react-fallback.svg)](https://github.com/steviecs/react-fallback/blob/main/LICENSE)
 
-A POC React component library for rendering skeleton states that automatically adapt to the shape of your UI layout while data is being fetched.
-
+A POC React component library for rendering adaptive skeleton states that adjust to the shape of your UI layout while data is being fetched.
 
 ## Demo
 

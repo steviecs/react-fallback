@@ -1,11 +1,5 @@
-import useFallback from './useFallback'
-
-interface FallbackProps {
-  isLoading: boolean
-  children: JSX.Element | JSX.Element[]
-  fallbackOnStaticContent?: boolean
-}
-
+import { jsx as _jsx } from "react/jsx-runtime";
+import useFallback from './useFallback';
 /**
  * A component that wraps your JSX to render adaptive skeletons
  * that adjust to the shape of UI layouts while data is being fetched
@@ -14,8 +8,8 @@ interface FallbackProps {
  * @param fallbackOnStaticContent - a flag that determines if you want to
  * skeleton-ize content that is already loaded or not
  */
-export default function Fallback({isLoading, children, fallbackOnStaticContent}: FallbackProps) {
-  const {withFallback} = useFallback({isLoading, fallbackOnStaticContent})
-
-  return withFallback(<div>{children}</div>)
+export default function Fallback({ isLoading, children, fallbackOnStaticContent }) {
+    const { withFallback } = useFallback({ isLoading, fallbackOnStaticContent });
+    return withFallback(_jsx("div", { children: children }));
 }
+//# sourceMappingURL=index.js.map
